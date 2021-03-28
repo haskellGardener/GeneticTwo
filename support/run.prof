@@ -1,0 +1,36 @@
+	Thu Aug 12 18:11 2010 Time and Allocation Profiling Report  (Final)
+
+	   run +RTS -p -RTS
+
+	total time  =        5.54 secs   (277 ticks @ 20 ms)
+	total alloc = 3,560,337,832 bytes  (excludes profiling overheads)
+
+COST CENTRE                    MODULE               %time %alloc
+
+population                     Population            83.0   85.4
+evalX                          Main                  13.4    9.7
+adjFits                        Main                   3.6    4.9
+
+
+                                                                                               individual    inherited
+COST CENTRE              MODULE                                               no.    entries  %time %alloc   %time %alloc
+
+MAIN                     MAIN                                                   1           0   0.0    0.0   100.0  100.0
+ main                    Main                                                 246           1   0.0    0.0     0.0    0.0
+ CAF                     Main                                                 240           4   0.0    0.0   100.0  100.0
+  sample                 Main                                                 251           1   0.0    0.0     0.0    0.0
+  main                   Main                                                 247           0   0.0    0.0   100.0  100.0
+   eval2normG            Main                                                 248           2   0.0    0.0   100.0  100.0
+    adjFits              Main                                                 254           0   3.6    4.9     3.6    4.9
+    normFits             Main                                                 253           2   0.0    0.0     0.0    0.0
+    evalX                Main                                                 250           1  13.4    9.7    96.4   95.1
+     population          Population                                           252    23954492  83.0   85.4    83.0   85.4
+ CAF                     GHC.Float                                            217           3   0.0    0.0     0.0    0.0
+ CAF                     GHC.IO.Handle.FD                                     178           2   0.0    0.0     0.0    0.0
+ CAF                     System.Posix.Internals                               177           2   0.0    0.0     0.0    0.0
+ CAF                     GHC.Conc                                             161           7   0.0    0.0     0.0    0.0
+ CAF                     GHC.IO.Handle.Internals                              152           1   0.0    0.0     0.0    0.0
+ CAF                     GHC.IO.Encoding.Iconv                                146           5   0.0    0.0     0.0    0.0
+ CAF                     Population                                           139           1   0.0    0.0     0.0    0.0
+  gpop                   Population                                           249           1   0.0    0.0     0.0    0.0
+ CAF                     Data.Sequence                                        126           1   0.0    0.0     0.0    0.0
